@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f4f4f;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: #fff;
+  font-weight: 1.3rem;
+}/*# sourceMappingURL=app.component.css.map */

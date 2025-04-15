@@ -1,0 +1,26 @@
+.activity-log {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.activity-log h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2f4f4f;
+}
+.activity-log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.activity-log ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+.activity-log ul li:last-child {
+  border-bottom: none;
+}
+.activity-log ul li strong {
+  font-weight: 600;
+}/*# sourceMappingURL=dashboard.component.css.map */
