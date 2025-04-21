@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class FirstCompComponent {
 
+
+  color = 'white'
+  fontsize= 34;
+  backgroundcolor= 'grey'
+
+
+  isActive= true
+
+  Invalidate = true
 }

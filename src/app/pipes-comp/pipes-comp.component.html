@@ -1,0 +1,47 @@
+<h3>Date Times Example:-</h3>
+<b> Original:-</b> {{today}} <br>
+<div class =  "container">
+<b> 1.Short:-</b> {{today | date:'short'}}<br>
+<b> 2.Long:-</b> {{today | date:'long'}}
+</div>
+<h3> Currency Type Example:- </h3>
+<b>India :</b> {{number | currency:'INR'}} <br>
+<b>USD :</b> {{number | currency:'USD'}} <br>
+
+<h3> String Type Example:- </h3>
+<b> Changes to Uppercase</b> {{data | uppercase}} <br>
+<b> Changes to Lowercase</b> {{data | lowercase}} 
+
+<h3> Decimal Type Example:- </h3>
+<b> Number</b> {{number | number:'2.2-4'}} <br>
+
+<h3> Percent Type Example:- </h3>
+<b> Number</b> {{percentage | percent:'2.0-4'}} <br>
+
+<h3> Json Type Example:- </h3>
+<b>Original:</b> {{person.name}}  {{person.age}} <br>
+<b> Json Parsing result</b> {{person | json}} <br>
+
+<h3> String Slice Type Example:- </h3>
+<b>Original String/MSG: </b>{{message}} <br>
+
+<b> Slice (1,7)</b> {{message | slice : 1:7}} <br>
+<b> Slice (0,-7)</b> {{message | slice : 0:-7}} <br>
+<b> Slice (-7)</b> {{message | slice : -7}} <br>
+<b> Slice (-0)</b> {{message | slice : - 0}} <br>
+<b> Slice (-7,-3)</b> {{message | slice : -7:-3}} <br>
+
+<h3>Key Value Pair</h3>
+    <ul *ngFor = "let p of person | keyvalue">
+        {{p.key}} - {{p.value}}
+
+    </ul>
+
+<h1> I18SelectPipe Example</h1>
+    <b>Gender:-</b>{{gender | i18nSelect : genderMap}}
+<br>
+    <button (click)=" changeGender('male')"> Change Gender ->Male</button>
+   <br>    <button (click)=" changeGender('female')"> Change Gender ->FeMale</button>
+   <br>   <button (click)=" changeGender('trans')"> Change Gender ->Trans</button>
+
+
